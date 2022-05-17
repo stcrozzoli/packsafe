@@ -1,0 +1,847 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(207, 207, 207);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Aca empieza la 1ra section del header*/
+.header__section1{
+    background-color: rgb(13, 13, 13);
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+#divisotipo{
+    justify-self: start;
+    margin-left: 8%;
+}
+
+#isotipo{
+    width: 90px;
+}
+
+/*aca empieza la 2da section del header*/
+.header__section2 {
+    background-color: rgb(98,98,98);
+    height: 50%;
+    display: grid;
+    grid-template-areas:
+        "searchbar nav nav";
+    grid-template-columns: 1.5fr;
+    align-items: center;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+.header__section2 nav{
+    grid-area:nav;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#menuheader{
+    list-style: none;
+    display:flex;
+}
+
+#menuheader a{
+    color:white;
+    font-size: large;
+    text-decoration:none;
+    font-family: Jetbrains Mono;
+    padding:50px;
+}
+
+#menuheader a:hover{
+    color:orange;
+    transition-duration: 0.5s;
+}
+
+.section2__div{
+    display:flex;
+    align-items: center;
+    grid-area:searchbar;
+    justify-content: space-evenly;
+}
+
+#searchbar{
+    height: 50px;
+    width: 70%;
+}
+
+/*Aca empieza el body*/
+
+.maindex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2{
+    font-family: Jetbrains Mono, sans-serif;
+}
+
+.main__section{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.main__section__divproductos{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+.main__section__divproductos__divtarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 8px grey;
+}
+
+.main__section__divh2{
+    margin-top:1%;
+}
+
+.main__section__divproductos__divtarjeta:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(13, 13, 13);
+    display: grid;
+    grid-template-areas: 
+                        "a b c"
+                        "d e f";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    justify-items: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer__section__div__qr {
+    width: 300px;
+    height: 300px;
+    grid-area:a;
+}
+
+.footer__section__div__marcas {
+    width: 300px;
+    height: 300px;
+    grid-area:c;
+}
+
+.footer__nav{
+    grid-area:b;
+    align-self: center;
+}
+
+footer nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    padding-top:20px;
+}
+
+footer nav ul li a:hover{
+    color:orange;
+    transition-duration: 0.5s;
+}
+    
+footer nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+.footer__derechos {
+    color:white;
+    text-align: center;
+    margin-top:40px;
+    grid-area: e;
+    align-self: center;
+}
+
+
+footer nav ul li{
+    padding-top:25px;
+}
+
+#qrtext{
+    grid-area:d;
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*Quienes somos*/
+
+.qs__main{
+    display:flex;
+    align-items: center;
+    background-image: url(../multimedia/imgs/quienesomosfondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no repeat;
+}
+
+.qs__main__div1{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.qs__main__div1 img{
+    width: 75%;
+    height: 75%;
+    box-shadow: 1px 1px 15px 1px black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.qs__main__div2{
+    display: flex;
+    width: 40%;
+    height: 50%;
+    padding:1.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.6rem;
+    border:1px solid grey;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.664);
+    color:rgb(194, 194, 194);
+    margin-bottom: 20px;
+}
+
+/*Centro*/
+.sectioncentro{
+    display:flex;
+    flex-flow:column wrap;
+    padding:3rem;
+}
+
+.sectioncentro__div__centro1{
+    display:flex;
+    flex-direction: column;
+}
+
+.sectioncentro__div__centro2{
+    display:flex;
+    flex-direction: row;
+    margin-top:2rem;
+}
+
+.sectioncentro__div__centro3{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.sectioncentro__div__centro4{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+textarea{
+    height: 150px;
+    width: 70%;
+    border:2px solid grey;
+}
+
+.ticket{
+    text-decoration: none;
+    color: blue;
+}
+
+/*Log In*/
+.mainlogin {
+    background-image: url(../multimedia/imgs/loginfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+}
+
+.mainlogin__section{
+    background-color: rgba(0, 0, 0, 0.664);
+    height: 25%;
+    border-radius: 20px;
+    padding:1rem;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    margin-top: 12%;
+    margin-bottom:12%;
+    height: 300px;
+    
+}
+
+.mainlogin__section__div1{
+    color:rgb(194, 194, 194);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.mainlogin__section__div2{
+    color:rgb(194, 194, 194);
+    display:flex;
+    justify-content: center;
+}
+.mainlogin__section__div3{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.mainlogin__section__div4{
+    color:rgb(194, 194, 194);
+    text-align: center;
+    font-size: larger;
+}
+
+#username{
+    background-color: rgb(51, 51, 51);
+}
+
+#password{
+    background-color: rgb(51, 51, 51);
+}
+
+/*Productos*/
+
+.mainproductos{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.filtroproductos{
+    display:flex;
+    flex-flow:column wrap;
+    width: 15%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: 10%;
+    padding:1rem;
+}
+
+.listaproductos{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+.todosproductos{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 8px grey;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+/*register*/
+.tittleregister{
+    margin-top: 3%;
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+    border-radius: 30px;
+    width: 25%;
+    padding:20px
+}
+
+.registermain{
+    display:flex;
+    flex-direction: column;
+    padding-left:2%;
+    justify-content: center;
+    align-items: center;
+
+}
+.registermain__sectionform{
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    width:25%;
+    padding:30px;
+    font-size: larger;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    height: 350px;
+
+}
+
+.inputtexto1{
+    margin-top:30px;
+    margin-bottom:10px;
+    border:1px solid black;
+    padding:5px;
+    border-radius: 15px;
+}
+
+.inputtexto2{
+    padding:5px;
+    margin-top:10px;
+    margin-bottom:30px;
+    border:1px solid black;
+    border-radius: 15px;
+}
+
+.inputradio{
+    margin-top:10px;
+    margin-bottom:10px;
+    border:1px solid rgb(99, 99, 99);
+    padding:5px;
+    border-radius: 15px;
+}
+/*media*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    /*index*/
+    #isotipo{
+        width: 80px;
+    }
+    .header__section2 {
+        grid-template-areas:
+            "searchbar nav";
+        grid-template-columns: 0.5fr 1.5;
+    }
+    
+    #menuheader a{
+        font-size: medium;
+        padding:0.5rem;
+    }
+    
+    #searchbar{
+        height: 40px;
+    }
+
+    .main__section__divproductos__divtarjeta{
+        margin-top:2%;
+        margin-bottom: 1%;
+    }
+    /*footer all pags*/
+    .footer{
+        grid-template-areas: 
+                        "a"
+                        "b"
+                        "c"
+                        "d"
+                        "e";
+        grid-template-columns: 1fr;
+    }
+    .footer__section__div__qr {
+        width: 300px;
+        height: 300px;
+        grid-area:c;
+    }
+    
+    .footer__section__div__marcas {
+        grid-area:b;
+    }
+    
+    .footer__nav{
+        grid-area:a;
+    }
+    .footer__derechos {
+        margin-top:80px;
+        grid-area: e;
+    }
+    #qrtext{
+        grid-area:d;
+        font-size: 1.3rem;
+    }
+    /*quienesomos*/
+    .qs__main__div1 img{
+        width: 90%;
+        height: 90%;
+    }
+    
+    .qs__main__div2{
+        width: 48%;
+        height: 55%;
+        padding:1.2rem;
+        font-size: 1.2rem;
+    }
+    /*productos*/
+    .todosproductos{
+        justify-content: center;
+        align-items: center;
+        margin-top:1rem;
+        margin-bottom:1rem;
+        width: 40%;
+    }
+    .todosproductos img{
+        width: 200px;
+    }
+
+    /*centroayuda*/
+    textarea{
+        height: 150px;
+        width: 90%;
+    }
+    /*register*/
+    .tittleregister{
+        margin-top:10px;
+        border-radius: 20px;
+        width: 50%;
+        padding:20px
+    }
+    .registermain__sectionform{
+        border:1px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        width:50%;
+        padding:30px;
+        font-size: larger;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 300px;
+    }
+    
+    .inputtexto1{
+        font-size: small;
+        margin-top:20px;
+        padding:5px;
+        border-radius: 15px;
+    }
+    
+    .inputtexto2{
+        font-size: small;
+        padding:5px;
+        margin-bottom:20px;
+        border-radius: 15px;
+    }
+    
+    .inputradio{
+        font-size: small;
+        margin-top:10px;
+        padding:5px;
+        border-radius: 15px;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:767px){
+    /*index*/
+    #isotipo{
+        width: 50px;
+        margin-left:20px;
+    }
+    .header__section2 {
+        background-color: rgb(98,98,98);
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #menuheader a{
+        color:white;
+        font-size: 10px;
+        text-decoration:none;
+        font-family: Arial, Helvetica, sans-serif;
+        padding:6px;
+    }
+
+    #searchbar{
+        height: 25px;
+        width: 90%;
+    }
+    .maindex{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .main__section{
+        width: 92%;
+        border-radius: 10px;
+    }
+    
+    .main__section__divproductos{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+    
+    .main__section__divproductos__divtarjeta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 2px 2px 8px grey;
+        width: 45%;
+        font-size: 0.8rem;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    .main__section__divproductos__divtarjeta img{
+        width: 100px;
+    }
+    
+    .main__section__divh2{
+        margin-top:1%;
+        text-align: center;
+    }
+    
+    /*footer all pags*/
+    .footer{
+        grid-template-areas: 
+                        "a"
+                        "b"
+                        "c"
+                        "d"
+                        "e";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .footer__section__div__qr {
+        grid-area:c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .footer__section__div__marcas {
+        grid-area:b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__nav{
+        grid-area:a;
+    }
+    .footer__derechos {
+        margin-top:80px;
+        grid-area: e;
+    }
+    #qrtext{
+        grid-area:d;
+        font-size: 1.3rem;
+    }
+
+    .footer__section__div__marcas img{
+        width: 200px;
+    }
+
+    .footer__section__div__qr img{
+        width:200px;
+    }
+
+    /*quienesomos*/
+    .qs__main{
+        flex-direction: column;
+    }
+    
+    .qs__main__div1{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .qs__main__div1 img{
+        width: 80%;
+        height: 80%;
+    }
+    
+    .qs__main__div2{
+        width: 90%;
+        height: 55%;
+        padding:1rem;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1rem;
+        text-align: center;
+    }
+    /*productos*/
+    .mainproductos{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0.8rem;
+    }
+    
+    .filtroproductos{
+        display:flex;
+        flex-flow:column wrap;
+        width: 100%;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        height: 10%;
+        padding:1rem;
+        margin-bottom: 15px;
+    }
+    
+    .listaproductos{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        justify-content: space-evenly;
+    }
+    
+    .todosproductos{
+        display:flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 8px grey;
+        margin-top:0.7rem;
+        margin-bottom:0.7rem;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .todosproductos img{
+        width: 120px;
+    }
+    /*centroayuda*/
+    .maincentro{
+        display:flex;
+        flex-direction: column;
+    }
+    .sectioncentro{
+        display:flex;
+        flex-flow:column wrap;
+        padding:1rem;
+        text-align: center;
+    }
+    
+    .sectioncentro__div__centro1{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sectioncentro__div__centro2{
+        display:flex;
+        flex-direction: column;
+        margin-top:2rem;
+    }
+    
+    .sectioncentro__div__centro3{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .sectioncentro__div__centro4{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    textarea{
+        height: 150px;
+        width: 100%;
+        border:1px solid grey;
+    }
+    
+    .ticket{
+        text-decoration: none;
+        color: blue;
+    }
+    /*login*/
+    .mainlogin__section{
+        width: 90%;
+        padding:30px
+    }
+
+    /*register*/
+    #nombrereal{
+        width: 100%;
+    }
+    #apellidoreal{
+        width: 100%;
+    }
+    #fechanac{
+        width: 100%;
+    }
+    #email{
+        width: 100%;
+    }
+    .tittleregister{
+        font-size: small;
+        margin-top:10px;
+        border-radius: 20px;
+        width: 90%;
+        padding:10px
+    }
+    .registermain__sectionform{
+        border:1px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        width:90%;
+        padding:20px;
+        font-size: larger;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 370px;
+    }
+    .inputtexto1{
+        font-size: small;
+        margin-top:20px;
+        padding:5px;
+        border-radius: 15px;
+    }
+    .inputtexto2{
+        font-size: small;
+        padding:5px;
+        margin-bottom:20px;
+        border-radius: 15px;
+    }
+    .inputradio{
+        font-size: small;
+        margin-top:10px;
+        padding:5px;
+        border-radius: 15px;
+    }
+}
+
+    
