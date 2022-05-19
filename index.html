@@ -7,9 +7,11 @@
         <title>Packsafe</title>
         <link rel="icon" href="multimedia/imgs/favicon.png">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
+        <script src="./js/bootstrap.min.js"></script>
     </head>
     <body>
         <header class="header">
@@ -35,6 +37,30 @@
                 </nav>
             </section>
         </header>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="7000">
+                <img src="./multimedia/imgs/indexmov1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="7001">
+                <img src="./multimedia/imgs/indexmov2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="7002">
+                <img src="./multimedia/imgs/indexmov3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="7003">
+                <img src="./multimedia/imgs/indexmov4.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <main class="maindex"> <!--Una vista pequeña de los diferentes productos catalogados (los que mas se venden, los que tienen ofertas, etc) Se añadiría el boton "Ver Mas"-->
             <section class="main__section">
                 <div class="main__section__divh2">
