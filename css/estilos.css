@@ -127,35 +127,13 @@ section h2{
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
+/*footer*/
 
-/*Footer*/
 footer{
     background-color: rgb(13, 13, 13);
-    display: grid;
-    grid-template-areas: 
-                        "a b c"
-                        "d e f";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:auto;
-    justify-items: center;
-    align-items: center;
-    margin-top: auto;
-}
-
-.footer__section__div__qr {
-    width: 300px;
-    height: 300px;
-    grid-area:a;
-}
-
-.footer__section__div__marcas {
-    width: 300px;
-    height: 300px;
-    grid-area:c;
 }
 
 .footer__nav{
-    grid-area:b;
     align-self: center;
 }
 
@@ -163,8 +141,6 @@ footer nav ul li a{
     color:white;
     text-decoration: none;
     font-size: 1.5rem;
-    padding-bottom: 15px;
-    padding-top:20px;
 }
 
 footer nav ul li a:hover{
@@ -174,28 +150,27 @@ footer nav ul li a:hover{
     
 footer nav ul{
     list-style: none;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 .footer__derechos {
     color:white;
-    margin-top:100px;
-    grid-area: e;
-    justify-self: center;
-    align-self: center;
+    margin-top:80px;
 }
-
 
 footer nav ul li{
     padding-top:25px;
 }
 
 #qrtext{
-    grid-area:d;
     color:white;
     font-size: 1.5rem;
-    text-align: center;
+} 
+
+.row{
+    padding-top:30px;
 }
+
 
 /*Quienes somos*/
 
@@ -452,37 +427,7 @@ textarea{
         margin-top:2%;
         margin-bottom: 1%;
     }
-    /*footer all pags*/
-    .footer{
-        grid-template-areas: 
-                        "a"
-                        "b"
-                        "c"
-                        "d"
-                        "e";
-        grid-template-columns: 1fr;
-    }
-    .footer__section__div__qr {
-        width: 300px;
-        height: 300px;
-        grid-area:c;
-    }
-    
-    .footer__section__div__marcas {
-        grid-area:b;
-    }
-    
-    .footer__nav{
-        grid-area:a;
-    }
-    .footer__derechos {
-        margin-top:80px;
-        grid-area: e;
-    }
-    #qrtext{
-        grid-area:d;
-        font-size: 1.3rem;
-    }
+
     /*quienesomos*/
     .qs__main__div1 img{
         width: 90%;
@@ -624,53 +569,6 @@ textarea{
         text-align: center;
     }
     
-    /*footer all pags*/
-    .footer{
-        grid-template-areas: 
-                        "a"
-                        "b"
-                        "c"
-                        "d"
-                        "e";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .footer__section__div__qr {
-        grid-area:c;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-    
-    .footer__section__div__marcas {
-        grid-area:b;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footer__nav{
-        grid-area:a;
-    }
-    .footer__derechos {
-        margin-top:80px;
-        grid-area: e;
-    }
-    #qrtext{
-        grid-area:d;
-        font-size: 1.3rem;
-    }
-
-    .footer__section__div__marcas img{
-        width: 200px;
-    }
-
-    .footer__section__div__qr img{
-        width:200px;
-    }
-
     /*quienesomos*/
     .qs__main{
         flex-direction: column;
@@ -696,6 +594,7 @@ textarea{
         font-size: 1rem;
         text-align: center;
     }
+
     /*productos*/
     .mainproductos{
         display:flex;
