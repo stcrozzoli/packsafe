@@ -16,39 +16,58 @@
     <body>
         <header class="header">
             <section class="header__section1">
-                <div id="divisotipo"><a href="index.html"><img id="isotipo" src="multimedia/imgs/pspng.png" alt="Isotipo de la página" width="100px"/></a></div>
-                <div><a href="index.html"><img id="logotipo" src="multimedia/imgs/packsafejpg.png" alt="Logotipo de la página" width="200px"/></a></div>
+                <div id="divisotipo">
+                    <a href="index.html"><img id="isotipo" src="multimedia/imgs/pspng.png" alt="Isotipo de la página"/></a>
+                </div>
+                <div>
+                    <a href="index.html"><img id="logotipo" src="multimedia/imgs/packsafejpg.png" alt="Logotipo de la página" width="180px"/></a>
+                </div>
             </section>
             <section class="header__section2">
-                <div class="section2__div">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                    <input id="searchbar" placeholder="Buscá eso que queres acá!">
-                </div>
-                <nav>
-                    <ul id="menuheader">
-                        <li id="aindex"><a href="index.html">Inicio</a></li>
-                        <li id="aquienes"><a href="pags/quienessomos.html">Quienes somos</a></li>
-                        <li id="aproductos"><a href="pags/productos.html">Productos</a></li>
-                        <li id="acentro"><a href="pags/centrodeayuda.html">Centro de Ayuda</a></li>
-                        <li id="alogin"><a href="pags/loginregister.html">Log In</a></li>
-                    </ul>
-                </nav>
+                <nav class="navbar navbar-expand-lg colornavbar">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active link-light me-3" aria-current="page" href="index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active link-light me-3" aria-current="page" href="./pags/quienessomos.html">Quienes Somos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active link-light me-3" aria-current="page" href="./pags/productos.html">Productos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active link-light me-3" aria-current="page" href="./pags/centrodeayuda.html">Centro de Ayuda</a>
+                          </li>
+                          <li class="nav-item asd">
+                            <a class="nav-link active link-light me-3 asd" aria-current="page" href="./pags/loginregister.html">Log In</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex formw" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Buscá eso que queres acá!" aria-label="Search">
+                          <button class="btn btn-outline-light" type="submit">Buscar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
             </section>
         </header>
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
+              <div class="carousel-item active" data-bs-interval="3001">
                 <img src="./multimedia/imgs/indexmov1.png" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="6001">
+              <div class="carousel-item" data-bs-interval="3002">
                 <img src="./multimedia/imgs/indexmov2.png" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="6002">
+              <div class="carousel-item" data-bs-interval="3003">
                 <img src="./multimedia/imgs/indexmov3.png" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="6003">
+              <div class="carousel-item" data-bs-interval="3004">
                 <img src="./multimedia/imgs/indexmov4.png" class="d-block w-100" alt="...">
               </div>
             </div>
@@ -61,7 +80,7 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <main class="maindex"> <!--Una vista pequeña de los diferentes productos catalogados (los que mas se venden, los que tienen ofertas, etc) Se añadiría el boton "Ver Mas"-->
+        <main class="maindex">
             <section class="main__section">
                 <div class="main__section__divh2">
                     <h2>Los mas vendidos 🔥</h2>

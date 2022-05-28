@@ -11,72 +11,34 @@ body{
     flex-direction: column;
 }
 
-/*Aca empieza la 1ra section del header*/
+/*Aca empieza el header*/
 .header__section1{
     background-color: rgb(13, 13, 13);
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 50%;
     justify-items: center;
     align-items: center;
 }
 
 #divisotipo{
     justify-self: start;
-    margin-left: 8%;
+    margin-left: 3%;
 }
 
 #isotipo{
-    width: 90px;
+    width: 70px;
 }
 
-/*aca empieza la 2da section del header*/
-.header__section2 {
+.colornavbar{
     background-color: rgb(98,98,98);
-    display: grid;
-    grid-template-areas:
-        "searchbar nav nav";
-    grid-template-columns: 1.5fr;
-    align-items: center;
-    padding-top:15px;
-    padding-bottom: 15px;
 }
 
-.header__section2 nav{
-    grid-area:nav;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
+.formw{
+    width: 30%;
 }
 
-#menuheader{
-    list-style: none;
-    display:flex;
-}
-
-#menuheader a{
-    color:white;
-    font-size: large;
-    text-decoration:none;
-    font-family: Jetbrains Mono;
-    padding:50px;
-}
-
-#menuheader a:hover{
-    color:orange;
-    transition-duration: 0.5s;
-}
-
-.section2__div{
-    display:flex;
-    align-items: center;
-    grid-area:searchbar;
-    justify-content: space-evenly;
-}
-
-#searchbar{
-    height: 50px;
-    width: 70%;
+div ul li a:hover{
+    background-color: orange;
 }
 
 /*Aca empieza el body*/
@@ -402,32 +364,61 @@ textarea{
     padding:5px;
     border-radius: 15px;
 }
+/*register*/
+#nombrereal{
+    width: 50%;
+}
+#apellidoreal{
+    width: 50%;
+}
+#fechanac{
+    width: 50%;
+}
+#email{
+    width: 50%;
+}
+.tittleregister{
+    font-size: small;
+    margin-top:10px;
+    border-radius: 20px;
+    width: 25%;
+    padding:10px
+}
+.registermain__sectionform{
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    width:25%;
+    font-size: larger;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 400px;
+}
+.inputtexto1{
+    font-size: small;
+    margin-top:10px;
+    padding:5px;
+    border-radius: 15px;
+    width:100%;
+}
+.inputtexto2{
+    font-size: small;
+    padding:5px;
+    margin-bottom:20px;
+    border-radius: 15px;
+    width:100%;
+}
+.inputradio{
+    font-size: small;
+    margin-top:10px;
+    padding:5px;
+    border-radius: 15px;
+    width:100%;
+}
 /*media*/
 @media screen and (min-width:768px) and (max-width:1023px){
-    /*index*/
-    #isotipo{
-        width: 80px;
-    }
-    .header__section2 {
-        grid-template-areas:
-            "searchbar nav";
-        grid-template-columns: 0.5fr 1.5;
-    }
-    
-    #menuheader a{
-        font-size: medium;
-        padding:0.5rem;
-    }
-    
-    #searchbar{
-        height: 40px;
-    }
-
-    .main__section__divproductos__divtarjeta{
-        margin-top:2%;
-        margin-bottom: 1%;
-    }
-
     /*quienesomos*/
     .qs__main__div1 img{
         width: 90%;
@@ -502,73 +493,6 @@ textarea{
 }
 
 @media screen and (min-width:320px) and (max-width:767px){
-    /*index*/
-    #isotipo{
-        width: 50px;
-        margin-left:20px;
-    }
-    .header__section2 {
-        background-color: rgb(98,98,98);
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: no-wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #menuheader a{
-        color:white;
-        font-size: 10px;
-        text-decoration:none;
-        font-family: Arial, Helvetica, sans-serif;
-        padding:6px;
-    }
-
-    #searchbar{
-        height: 25px;
-        width: 90%;
-    }
-    .maindex{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .main__section{
-        width: 92%;
-        border-radius: 10px;
-    }
-    
-    .main__section__divproductos{
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    
-    }
-    
-    .main__section__divproductos__divtarjeta{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 2px 2px 8px grey;
-        width: 45%;
-        font-size: 0.8rem;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        text-align: center;
-    }
-    .main__section__divproductos__divtarjeta img{
-        width: 100px;
-    }
-    
-    .main__section__divh2{
-        margin-top:1%;
-        text-align: center;
-    }
-    
     /*quienesomos*/
     .qs__main{
         flex-direction: column;
@@ -721,7 +645,7 @@ textarea{
         justify-content: space-evenly;
         margin-top: 10px;
         margin-bottom: 10px;
-        height: 370px;
+        height: 450px;
     }
     .inputtexto1{
         font-size: small;
