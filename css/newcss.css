@@ -9,7 +9,6 @@ body {
   display: flex;
   flex-direction: column; }
 
-/*Aca empieza el header*/
 .header__section1 {
   background-color: #0d0d0d;
   display: grid;
@@ -33,7 +32,6 @@ body {
 .asd ul li a:hover {
   background-color: orange; }
 
-/*Body*/
 .maindex {
   display: flex;
   flex-direction: column;
@@ -71,17 +69,14 @@ body {
 section h2 {
   font-family: Jetbrains Mono, sans-serif; }
 
-/*footer*/
-footer {
-  background-color: #0d0d0d; }
-
 .footer__nav {
-  align-self: center; }
+  align-self: center;
+  justify-content: center; }
 
 footer nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
 
 footer nav ul li a:hover {
   color: orange;
@@ -93,19 +88,21 @@ footer nav ul {
 
 .footer__derechos {
   color: white;
-  margin-top: 80px; }
+  margin-top: 10px;
+  font-size: 0.7rem; }
 
 footer nav ul li {
   padding-top: 25px; }
 
 #qrtext {
   color: white;
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
 
 .row {
+  width: 70%;
+  margin: 0 auto !important;
   padding-top: 30px; }
 
-/*Quienes somos*/
 .qs__main {
   display: flex;
   align-items: center;
@@ -140,7 +137,6 @@ footer nav ul li {
     color: #c2c2c2;
     margin-bottom: 20px; }
 
-/*Centro*/
 .sectioncentro {
   display: flex;
   flex-flow: column wrap;
@@ -155,12 +151,7 @@ footer nav ul li {
   flex-direction: row;
   margin-top: 2rem; }
 
-.sectioncentro__div__centro3 {
-  display: flex;
-  flex-direction: column;
-  width: 50%; }
-
-.sectioncentro__div__centro4 {
+.sectioncentro__div__centro3, .sectioncentro__div__centro4 {
   display: flex;
   flex-direction: column;
   width: 50%; }
@@ -174,7 +165,6 @@ textarea {
   text-decoration: none;
   color: blue; }
 
-/*Log In*/
 .mainlogin {
   background-image: url(../multimedia/imgs/loginfondo.jpg);
   background-repeat: no-repeat;
@@ -221,7 +211,25 @@ textarea {
 #password {
   background-color: #333333; }
 
-/*Productos*/
+.cardp a {
+  text-decoration: none;
+  color: white; }
+  .cardp a:hover {
+    transition-duration: 0.5s;
+    color: orange; }
+
+.cardp .aprecio {
+  text-decoration: none;
+  font-size: larger; }
+
+.cardp {
+  display: flex;
+  flex-direction: column;
+  background-color: #6e6e6e; }
+
+.cardb {
+  box-shadow: 1px 1px 5px grey !important; }
+
 .mainproductos {
   display: flex;
   flex-direction: column;
@@ -232,7 +240,7 @@ textarea {
 .filtroproductos {
   display: flex;
   flex-flow: column wrap;
-  width: 80%;
+  width: 70%;
   background-color: whitesmoke;
   border-radius: 20px;
   height: 10%;
@@ -242,10 +250,12 @@ textarea {
 .listaproductos {
   display: flex;
   flex-flow: row wrap;
-  width: 80%;
+  width: 70%;
   background-color: whitesmoke;
   border-radius: 20px;
-  justify-content: space-evenly; }
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px; }
 
 .todosproductos {
   display: flex;
@@ -257,7 +267,6 @@ textarea {
 .numerodepag {
   margin-top: 30px; }
 
-/*register*/
 .tittleregister {
   margin-top: 3%;
   display: flex;
@@ -308,7 +317,6 @@ textarea {
   padding: 5px;
   border-radius: 15px; }
 
-/*register*/
 #nombrereal {
   width: 50%; }
 
@@ -361,9 +369,7 @@ textarea {
   border-radius: 15px;
   width: 100%; }
 
-/*media*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /*quienesomos*/
   .qs__main__div1 img {
     width: 90%;
     height: 90%; }
@@ -372,7 +378,6 @@ textarea {
     height: 55%;
     padding: 1.2rem;
     font-size: 1.2rem; }
-  /*productos*/
   .todosproductos {
     justify-content: center;
     align-items: center;
@@ -381,11 +386,9 @@ textarea {
     width: 40%; }
   .todosproductos img {
     width: 200px; }
-  /*centroayuda*/
   textarea {
     height: 150px;
     width: 90%; }
-  /*register*/
   .tittleregister {
     margin-top: 10px;
     border-radius: 20px;
@@ -420,7 +423,6 @@ textarea {
     border-radius: 15px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  /*quienesomos*/
   .qs__main {
     flex-direction: column; }
   .qs__main__div1 {
@@ -438,7 +440,6 @@ textarea {
     justify-content: flex-start;
     font-size: 1rem;
     text-align: center; }
-  /*productos*/
   .mainproductos {
     display: flex;
     flex-direction: column;
@@ -462,7 +463,6 @@ textarea {
     align-items: center; }
   .todosproductos img {
     width: 120px; }
-  /*centroayuda*/
   .maincentro {
     display: flex;
     flex-direction: column; }
@@ -479,7 +479,7 @@ textarea {
     display: flex;
     flex-direction: column;
     margin-top: 2rem; }
-  .sectioncentro__div__centro3 {
+  .sectioncentro__div__centro3, .sectioncentro__div__centro4 {
     display: flex;
     flex-direction: column;
     width: 100%; }
@@ -495,11 +495,9 @@ textarea {
   .ticket {
     text-decoration: none;
     color: blue; }
-  /*login*/
   .mainlogin__section {
     width: 90%;
     padding: 30px; }
-  /*register*/
   #nombrereal {
     width: 100%; }
   #apellidoreal {
